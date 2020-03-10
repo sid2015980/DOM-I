@@ -53,10 +53,7 @@ document.querySelector("a:nth-of-type(4)").textContent = 'Features'
 document.querySelector("a:nth-of-type(5)").textContent = 'About'
 document.querySelector("a:nth-of-type(6)").textContent = 'Contact'
 
-const navColor = document.querySelectorAll("a");
-navColor.forEach( element => {
-element.style.color = 'green'
-})
+
 
 
 
@@ -72,14 +69,15 @@ newItem2.textContent = "Blog"
 const navItem2 = document.querySelector('nav')
 navItem2.prepend(newItem2)
 
-
+const navColor = document.querySelectorAll("a");
+navColor.forEach( element => element.style.color = 'green')
 
 ///////////////////////////////////////////////////////////////
 
 //cta//////////////////////////////////////////////////////////
 
 document.querySelector('button').textContent = 'Get Started'
-document.querySelector('h1').textContent = 'DOM Is Awesome'
+document.querySelector('h1').textContent = "DOM Is Awesome"
 document.querySelector('#cta-img').src = '/img/header-img.png'
 //////////////////////////////////////////////////////////////
 
