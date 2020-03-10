@@ -49,18 +49,35 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 document.querySelector("a").textContent = 'Services'
 document.querySelector("a:nth-of-type(2)").textContent = 'Product'
 document.querySelector("a:nth-of-type(3)").textContent = 'Vision'
-document.querySelector("a:nth-of-type(4)").textContent = 'About'
-document.querySelector("a:nth-of-type(5)").textContent = 'Contact'
+document.querySelector("a:nth-of-type(4)").textContent = 'Features'
+document.querySelector("a:nth-of-type(5)").textContent = 'About'
+document.querySelector("a:nth-of-type(6)").textContent = 'Contact'
 
-let navColor = document.querySelectorAll("a");
+const navColor = document.querySelectorAll("a");
 navColor.forEach( element => {
 element.style.color = 'green'
-
 })
+
+
+
+const newItem = document.createElement("a")
+newItem.textContent = "Ideas"
+const navItem1 = document.querySelector('nav')
+navItem1.append(newItem)
+
+
+
+const newItem2 = document.createElement("a")
+newItem2.textContent = "Blog"
+const navItem2 = document.querySelector('nav')
+navItem2.prepend(newItem2)
+
+
 
 ///////////////////////////////////////////////////////////////
 
 //cta//////////////////////////////////////////////////////////
+
 document.querySelector('button').textContent = 'Get Started'
 document.querySelector('h1').textContent = 'DOM Is Awesome'
 document.querySelector('#cta-img').src = '/img/header-img.png'
@@ -98,3 +115,6 @@ const footer = document.querySelectorAll('footer')
 
 footer[0].textContent = siteContent ["footer"] ["copyright"]
 //////////////////////////////////////////////////////////
+
+linebreak = document.createElement("br");
+(linebreak)
