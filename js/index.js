@@ -37,6 +37,64 @@ const siteContent = {
   },
 };
 
+
+
+
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+
+//nav links////////////////////////////////////////////////////
+document.querySelector("a").textContent = 'Services'
+document.querySelector("a:nth-of-type(2)").textContent = 'Product'
+document.querySelector("a:nth-of-type(3)").textContent = 'Vision'
+document.querySelector("a:nth-of-type(4)").textContent = 'About'
+document.querySelector("a:nth-of-type(5)").textContent = 'Contact'
+
+let navColor = document.querySelectorAll("a");
+navColor.forEach( element => {
+element.style.color = 'green'
+
+})
+
+///////////////////////////////////////////////////////////////
+
+//cta//////////////////////////////////////////////////////////
+document.querySelector('button').textContent = 'Get Started'
+document.querySelector('h1').textContent = 'DOM Is Awesome'
+document.querySelector('#cta-img').src = '/img/header-img.png'
+//////////////////////////////////////////////////////////////
+
+
+//main-content//////////////////////////////////////////////////
+const mainContent = document.querySelectorAll('p')
+mainContent[0].textContent = siteContent ["main-content"]["features-content"]
+mainContent[1].textContent = siteContent ["main-content"]["about-content"]
+mainContent[2].textContent = siteContent ["main-content"]["services-content"]
+mainContent[3].textContent = siteContent ["main-content"]["product-content"]
+mainContent[4].textContent = siteContent ["main-content"]["vision-content"]
+
+const mainH4 = document.querySelectorAll('h4')
+mainH4[0].textContent = siteContent ["main-content"]["features-h4"]
+mainH4[1].textContent = siteContent ["main-content"]["about-h4"]
+mainH4[2].textContent = siteContent ["main-content"]["services-h4"]
+mainH4[3].textContent = siteContent ["main-content"]["product-h4"]
+mainH4[4].textContent = siteContent ["main-content"]["vision-h4"]
+
+document.querySelector('#middle-img').src = '/img/mid-page-accent.jpg'
+//////////////////////Contact section////////////////////////////////
+const contH4 = document.querySelectorAll('.contact h4')
+
+contH4[0].textContent = siteContent ["contact"] ["contact-h4"]
+const contact = document.querySelectorAll('.contact p')
+
+contact[0].textContent = siteContent ["contact"]["address"]
+
+contact[1].textContent = siteContent ["contact"] ["phone"]
+contact[2].textContent = siteContent ["contact"] ["email"]
+//////////////////////Footer////////////////////////////////////
+const footer = document.querySelectorAll('footer')
+
+footer[0].textContent = siteContent ["footer"] ["copyright"]
+//////////////////////////////////////////////////////////
