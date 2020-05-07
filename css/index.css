@@ -29,7 +29,9 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
+    background-color: white;
+    color:black;
 }
 ol, ul {
 	list-style: none;
@@ -95,6 +97,7 @@ header nav a:hover {
 header .logo {
     align-self: flex-end;
     margin: 28px 0 0 91px;
+    filter: invert(0);
 }
 
 /* Call To Action (CTA) Styles */
